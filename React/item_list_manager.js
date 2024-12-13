@@ -3,13 +3,17 @@ import "h8k-components";
 
 import "./App.css";
 
-// Unfinished
 function App() {
   const [items, setItems] = useState([]);
   const [input, setInput] = useState("");
 
   const handleAddItem = () => {
-    // TODO: Add logic to add input to items list
+    if (input != ""){
+      setItems([
+        ...items,
+        input
+      ]);
+    }
   };
 
   return (
