@@ -2,7 +2,7 @@ import { useState } from "react";
 import "h8k-components";
 
 import "./App.css";
-
+// TODO: Clear input field after button click
 function App() {
   const [items, setItems] = useState([]);
   const [input, setInput] = useState("");
